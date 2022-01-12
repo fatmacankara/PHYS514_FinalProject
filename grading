@@ -1,2 +1,5 @@
 You did quite a bit of work
-- Your ormula for the surface gravity- densityrelationship is outright wrong. How could you get the correct coeffcicients from the fit?
+- Your ormula for the surface gravity- densityrelationship is outright wrong, but i see that you hacve the correct formula. 
+- Your numerical results are good in general, but you did not really do much in convergece analysis, you don't really know how much error you have.
+
+18/20
