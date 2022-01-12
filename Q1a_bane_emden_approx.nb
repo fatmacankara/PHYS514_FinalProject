@@ -1,0 +1,72 @@
+Notebook[{Cell[
+TextData[{"Behavior"," ","of"," ","regular"," ","solutions"," ","at"," ","the"," ","center-an"," ","approximation"," ","for"," ","Lane-Emden"," ","equation"}],
+"Item",ExpressionUUID -> "d8e7837b-43f5-4d3e-b620-0edfb142347b"],Cell[
+BoxData[RowBox[
+{RowBox[{"f","[",RowBox[{"\[Theta]",",",RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}],":="," ",RowBox[
+{RowBox[{RowBox[{"\[Xi]"," ",RowBox[{"D","[",RowBox[{RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ",RowBox[
+{"{",RowBox[{"\[Xi]",","," ","2"}],"}"}]}],"]"}]}]," ","+"," ",RowBox[{"2"," ",RowBox[
+{"D","[",RowBox[{RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}]}]," ","+"," ",RowBox[
+{"\[Xi]"," ",RowBox[{RowBox[{"\[Theta]","[","\[Xi]","]"}],"^","n"}]}]}]," ","=="," ","0"}]}]],
+"Input",CellLabel -> "In[46]:= ",ExpressionUUID -> "fdf3b1a1-0e2a-4a48-bcfd-fad869bc6287"],Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"\[Theta]","[","0","]"}]," ","=="," ","1"}],";"}]],"Input",
+CellLabel -> "In[47]:= ",ExpressionUUID -> "1ac0bdb6-ab64-418f-95a9-89ea2c5b4369"],Cell[
+BoxData[
+RowBox[{" ",RowBox[{RowBox[{RowBox[{RowBox[{"\[Theta]","'"}],"[","0","]"}]," ","=="," ","0"}],";"}]}]],
+"Input",CellLabel -> "In[48]:= ",ExpressionUUID -> "0ca1e719-92a2-4b57-8e39-37090a7b56e4"],Cell[
+BoxData[
+RowBox[{RowBox[{"solution"," ","="," ",RowBox[{"AsymptoticDSolveValue","[",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"f","[",RowBox[{"\[Theta]",",",RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}],",",RowBox[
+{RowBox[{"\[Theta]","[","0","]"}],"==","1"}],","," ",RowBox[{RowBox[{RowBox[{"\[Theta]","'"}],"[","0","]"}],"==","0"}]}],"}"}],","," ",RowBox[
+{"\[Theta]","[","\[Xi]","]"}],","," ",RowBox[{"{",RowBox[{"\[Xi]",","," ","0",","," ","6"}],"}"}]}],"]"}]}],";"}]],
+"Input",CellLabel -> "In[49]:= ",ExpressionUUID -> "6cf840b2-37ee-472e-9d13-ed125d400540"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"FullSimplify","[","solution","]"}]],"Input",CellLabel -> "In[50]:= ",
+ExpressionUUID -> "2ef907c5-aa4d-4cce-8db2-e5d18dfbce42"],Cell[
+BoxData[RowBox[{"1","-",FractionBox[
+SuperscriptBox["\[Xi]","2"],"6"],"+",FractionBox[RowBox[{"n"," ",SuperscriptBox["\[Xi]",
+"4"]}],"120"],"+",FractionBox[RowBox[{RowBox[{"(",RowBox[{"5","-",RowBox[{"8"," ","n"}]}],")"}]," ","n"," ",SuperscriptBox[
+"\[Xi]","6"]}],"15120"]}],StandardForm],"Output",CellLabel -> "Out[50]= ",ExpressionUUID -> "b48cfade-55b6-4af0-be8d-127dd5d758df"]},
+Open],ExpressionUUID -> "7e5bb010-f25d-491e-883b-f12ab9f687c9"],Cell[
+TextData[{" ","Evaluate"," ","analytically"," ","at"," ","n",StyleBox[
+RowBox[{" ","="," "}]],"1"}],"Item",ExpressionUUID -> "028f54f3-38f5-4eb0-8053-a49569875813"],Cell[
+BoxData[
+{RowBox[{RowBox[{"f","[",RowBox[{"\[Theta]",",",RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}],":="," ",RowBox[
+{RowBox[{RowBox[{"\[Xi]"," ",RowBox[{"D","[",RowBox[{RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ",RowBox[
+{"{",RowBox[{"\[Xi]",","," ","2"}],"}"}]}],"]"}]}]," ","+","  ",RowBox[{"2"," ",RowBox[
+{"D","[",RowBox[{RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}]}]," ","+"," ",RowBox[
+{"\[Xi]"," ",RowBox[{"\[Theta]","[","\[Xi]","]"}]}]}]," ","=="," ","0"}]}],"\n",RowBox[
+{RowBox[{RowBox[{"\[Theta]","[","0","]"}]," ","=="," ","1"}],";"}],"\n",RowBox[{" ",RowBox[
+{RowBox[{RowBox[{RowBox[{"\[Theta]","'"}],"[","0","]"}]," ","=="," ","0"}],";"}]}]}],
+"Input",CellLabel -> "In[51]:= ",ExpressionUUID -> "3622d9f0-d0ba-4787-9551-c348b68391d1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"solution"," ","="," ",RowBox[{"DSolve","[",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"f","[",RowBox[{"\[Theta]",",",RowBox[{"\[Theta]","[","\[Xi]","]"}],","," ","\[Xi]"}],"]"}],","," ",RowBox[
+{RowBox[{"\[Theta]","[","0","]"}],"==","1"}],","," ",RowBox[{RowBox[{RowBox[{"\[Theta]","'"}],"[","0","]"}],"==","0"}]}],"}"}],","," ",RowBox[
+{"\[Theta]","[","\[Xi]","]"}],",","\[Xi]"}],"]"}]}],";"}]],"Input",CellLabel -> "In[54]:= ",
+ExpressionUUID -> "7f8f8f95-09d3-410d-a418-431c4a56f080"],Cell[
+BoxData[TemplateBox[
+{"Solve","incnst","\"Inconsistent or redundant transcendental equation. After reduction, the bad equation is \\!\\(\\*TagBox[RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\", TemplateBox[{\\\"1\\\"}, \\\"C\\\"]}], \\\"+\\\", TemplateBox[{\\\"2\\\"}, \\\"C\\\"]}], \\\")\\\"}]}], Short[#1, 5] & ]\\) == 0.\"",2,54,17,19487536544179136271,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "13969e6e-300f-4673-98b5-7bb6e05e02d4"],Cell[
+BoxData[
+TemplateBox[{"Solve","incnst","\"Inconsistent or redundant transcendental equation. After reduction, the bad equation is \\!\\(\\*TagBox[RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\", TemplateBox[{\\\"1\\\"}, \\\"C\\\"]}], \\\"+\\\", TemplateBox[{\\\"2\\\"}, \\\"C\\\"]}], Short[#1, 5] & ]\\) == 0.\"",2,54,18,19487536544179136271,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "644fe46f-7150-4a48-af3f-cd4c463eb6e7"],Cell[
+BoxData[
+TemplateBox[{"Solve","ifun","\"Inverse functions are being used by \\!\\(\\*TagBox[\\\"Solve\\\", Short[#1, 5] & ]\\), so some solutions may not be found; use Reduce for complete solution information.\"",2,54,19,19487536544179136271,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "c6917bb4-3781-4565-8a36-0eae8b7403b6"]},
+Open],ExpressionUUID -> "ac649c4a-8073-4997-afff-3f330b80c543"],Cell[
+TextData[{"Solution"," ","is"," ","given"," ","by"," ","the"," ","following"," ","selection",":"}],
+"Subitem",ExpressionUUID -> "d7616868-abea-4815-a9a4-742aaaf5e448"],Cell[
+BoxData[
+RowBox[{RowBox[{"soln"," ","="," ",RowBox[{"solution","[",RowBox[{"[",RowBox[{"1",",","1",","," ","2"}],"]"}],"]"}]}],";"}]],
+"Input",CellLabel -> "In[55]:= ",ExpressionUUID -> "d667c606-f4bf-4f27-9483-33541e76ef48"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"FullSimplify","[","soln","]"}]],"Input",CellLabel -> "In[56]:= ",
+ExpressionUUID -> "604115f6-5e92-4c86-859c-6d66e65954ad"],Cell[
+BoxData[FractionBox[
+RowBox[{"Sin","[","\[Xi]","]"}],"\[Xi]"],StandardForm],"Output",CellLabel -> "Out[56]= ",
+ExpressionUUID -> "d06e5d4b-7f98-42f0-9b28-5e2c4a6cf1ef"]},Open],ExpressionUUID -> "2ea1d8bb-7756-4af1-82c3-810bb25d2204"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (November 30, 2021)"]

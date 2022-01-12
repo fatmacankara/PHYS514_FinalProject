@@ -1,0 +1,51 @@
+Notebook[{Cell[
+TextData[{"Power"," ","series"," ","expansion"," ","for"," ","function",StyleBox[
+RowBox[{" "," "}]],"P"}],"Item",ExpressionUUID -> "6554b176-268d-4e01-b188-0f60225c795a"],Cell[
+BoxData[
+RowBox[{RowBox[{"Eq8","[","x_","]"}]," ",":="," ",RowBox[{"c","*",RowBox[{"(",RowBox[
+{RowBox[{"x"," ","*"," ",RowBox[{"(",RowBox[{RowBox[{"2"," ","*"," ",RowBox[{"x","^","2"}]}]," ","-"," ","3"}],")"}],"*",RowBox[
+{"(",RowBox[{RowBox[{"(",RowBox[{RowBox[{"x","^","2"}]," ","+"," ","1"}],")"}],"^",RowBox[
+{"(","0.5",")"}]}],")"}]}]," ","+"," ",RowBox[{"(",RowBox[{"3","*",RowBox[{"ArcSinh","[","x","]"}]}],")"}]}],")"}]}]}]],
+"Input",CellLabel -> "In[154]:= ",ExpressionUUID -> "96294750-0c78-4b0b-89e2-f4b724266b93"],Cell[
+TextData[
+{"Generate"," ","a"," ","power"," ","series"," ","expansion"," ","for"," ","f",StyleBox[
+RowBox[{","," "}]],"where"," ","n"," ","is"," ","an"," ","explicit"," ","integer","."}],
+"Item",ExpressionUUID -> "de48ee84-cda6-456a-84ca-badae429e697"],Cell[
+BoxData[RowBox[
+{RowBox[{"normseries","[",RowBox[{"x_",","," ","n_"}],"]"}]," ",":="," ",RowBox[{RowBox[
+{"Series","[",RowBox[{RowBox[{"Eq8","[","xx","]"}],","," ",RowBox[{"{",RowBox[{"xx",","," ","0",","," ","n"}],"}"}]}],"]"}]," ","/."," ",RowBox[
+{"xx"," ","\[Rule]"," ","x"}]}]}]],"Input",CellLabel -> "In[155]:= ",ExpressionUUID -> "159e5499-6faa-4256-8865-348d89f3774b"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"normseries","[",RowBox[{"x_",","," ","n_"}],"]"}]],"Input",
+CellLabel -> "In[158]:= ",ExpressionUUID -> "69680cc5-caba-4846-85a3-f6f348a9ca15"],Cell[
+BoxData[
+TemplateBox[{"Series","serlim","\"Series order specification \\!\\(\\*TagBox[\\\"n_\\\", Short[#1, 5] & ]\\) is not a machine-sized integer.\"",2,158,97,17199821714499459941,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "d35523c4-7160-42e6-94bf-79501503577b"],Cell[
+BoxData[
+TemplateBox[{"Series","serlim","\"Series order specification \\!\\(\\*TagBox[\\\"n_\\\", Short[#1, 5] & ]\\) is not a machine-sized integer.\"",2,158,98,17199821714499459941,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "72719a77-0aa9-4838-a93f-d6e01c7f79a9"],Cell[
+BoxData[
+RowBox[{"Series","[",RowBox[{RowBox[{"c"," ",RowBox[{"(",RowBox[{RowBox[{"3"," ",RowBox[
+{"ArcSinh","[","x_","]"}]}],"+",RowBox[{"x_"," ",SuperscriptBox[RowBox[{"(",RowBox[
+{"1","+",SuperscriptBox["x_","2"]}],")"}],"0.5`"]," ",RowBox[{"(",RowBox[{RowBox[
+{"-","3"}],"+",RowBox[{"2"," ",SuperscriptBox["x_","2"]}]}],")"}]}]}],")"}]}],",",RowBox[
+{"{",RowBox[{"x_",",","0",",","n_"}],"}"}]}],"]"}],StandardForm],"Output",CellLabel -> "Out[158]= ",
+ExpressionUUID -> "10c896e0-440a-45c0-a7e9-0a7e55eb47e9"]},Open],ExpressionUUID -> "6b3411f7-943d-4ee3-b846-421e08392ece"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"normseries","[",RowBox[{RowBox[{RowBox[{"(",RowBox[{"rho","/","D"}],")"}],"^",RowBox[
+{"(",RowBox[{"1","/","q"}],")"}]}],","," ","5"}],"]"}]],"Input",CellLabel -> "In[156]:= ",
+ExpressionUUID -> "50efc7e3-7574-4b36-a898-cff597687ce7"],Cell[
+BoxData[TemplateBox[
+{"SeriesData","sdatv","\"First argument \\!\\(\\*TagBox[SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"rho\\\", \\\"D\\\"], \\\")\\\"}], FractionBox[\\\"1\\\", \\\"q\\\"]], Short[#1, 5] & ]\\) is not a valid variable.\"",2,156,95,17199821714499459941,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "373d1ba6-59dc-4eb1-be0a-77a005d98534"],Cell[
+BoxData[
+InterpretationBox[RowBox[{RowBox[{"1.6`"," ","c"," ",SuperscriptBox[RowBox[{"(",SuperscriptBox[
+RowBox[{"(",FractionBox["rho","D"],")"}],FractionBox["1","q"]],")"}],"5"]}],"+",InterpretationBox[
+SuperscriptBox[RowBox[{"O","[",SuperscriptBox[RowBox[{"(",FractionBox["rho","D"],")"}],
+FractionBox["1","q"]],"]"}],"6"],SeriesData[Power[Times[Power[D,-1],rho],Power[q,
+-1]],0,{},5,6,1],Editable -> False]}],SeriesData[Power[Times[Power[D,-1],rho],Power[
+q,-1]],0,{Times[1.6`,c]},5,6,1],Editable -> False],StandardForm],"Output",CellLabel -> "Out[156]= ",
+ExpressionUUID -> "31d12548-6bc9-4964-b163-f8a32d98f717"]},Open],ExpressionUUID -> "16142e44-105b-4708-b47b-f6fc364819da"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (November 30, 2021)"]
