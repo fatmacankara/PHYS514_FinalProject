@@ -1,13 +1,13 @@
 # PHYS514_FinalProject
 
 
-Development and Dependencies
+## Development and Dependencies
 
--Python 3.7.3
--Pandas 1.1.5
--Numpy 1.19.5
--Scipy 1.4.1
--Matplotlib 3.2.2
+- Python 3.7.3
+- Pandas 1.1.5
+- Numpy 1.19.5
+- Scipy 1.4.1
+- Matplotlib 3.2.2
 
 
 Dataset
